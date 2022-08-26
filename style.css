@@ -98,6 +98,73 @@ header {
     display: block;
 }
 
+main {
+    width: 100%;
+}
+.content1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#Heart {
+    animation: changeColor 5s infinite alternate;
+}
+
+@keyframes changeColor {
+    0% {
+        fill: var(--primary-color);
+        opacity: 50;
+    }
+
+    100% {
+        fill: var(--span-color);
+        transform: scale(3,3);
+    }
+}
+
+.content2, .content3, .content4, .content5 {
+    padding: 0 100px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main h2 {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: justify;
+}
+.content2-item1, .content3-item1, .content4-item1, .content5-item1 {
+    max-width: 45%;
+}
+
+.btn {
+    text-align: center;
+    margin: 2rem auto 1.5rem;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    border: none;
+    box-shadow: 3px 2.5px rgb(41, 41, 46);
+}
+
+button a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
 @media (min-width: 500px) {
 
     .menu-box {
