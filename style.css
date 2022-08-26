@@ -97,3 +97,29 @@ header {
 .nav-menu[data-visible="true"] {
     display: block;
 }
+
+@media (min-width: 500px) {
+
+    .menu-box {
+        width: 80%;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-links:not(:first-child) {
+        margin: unset;
+    }
+}
