@@ -54,6 +54,12 @@ header {
     background-repeat: no-repeat;
     width: 2.5rem;
     aspect-ratio: 1;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.menu-trigger[aria-expanded="true"] {
+    background-image: url(images/close-menu.svg);
 }
 
 .nav-menu {
@@ -88,6 +94,6 @@ header {
     background-color: red;
 }
 
-.show-menu {
+.nav-menu[data-visible="true"] {
     display: block;
 }
